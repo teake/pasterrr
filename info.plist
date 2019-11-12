@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>nl.nutma.pasterrr</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>236EE31A-31CA-4A58-A1E3-C2F9ACA5D38B</key>
+		<array/>
+		<key>52BEFBFC-AD31-4889-B3F5-53C85B5A9B8A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AEE70035-1370-404D-B23B-0239EC1C3430</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>75E13EEA-EE4C-4950-88D8-9E914319AC07</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>236EE31A-31CA-4A58-A1E3-C2F9ACA5D38B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F36A4E88-5C02-4306-9516-70B45B480E3D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AEE70035-1370-404D-B23B-0239EC1C3430</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Teake Nutma</string>
+	<key>description</key>
+	<string>Character-by-character paste queue</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Pasterrr</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>2</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string>focusedapp</string>
+				<key>hotkey</key>
+				<integer>9</integer>
+				<key>hotmod</key>
+				<integer>1441792</integer>
+				<key>hotstring</key>
+				<string>V</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>1</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>F36A4E88-5C02-4306-9516-70B45B480E3D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>paste_single_item.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>AEE70035-1370-404D-B23B-0239EC1C3430</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>singleItemPaste</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>52BEFBFC-AD31-4889-B3F5-53C85B5A9B8A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>2</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string>focusedapp</string>
+				<key>hotkey</key>
+				<integer>9</integer>
+				<key>hotmod</key>
+				<integer>1310720</integer>
+				<key>hotstring</key>
+				<string>V</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>1</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>75E13EEA-EE4C-4950-88D8-9E914319AC07</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>parse_clipboard.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>236EE31A-31CA-4A58-A1E3-C2F9ACA5D38B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow is a paste queue and a character-by-character paster in one.
+
+The character-by-character paste takes whatever is on the clipboard and pastes it one character at a time to the frontmost application, giving the impression of typing. It can be triggered by the default hotkey ⇧⌃⌘V.
+
+The paste queue is invoked with ⌃⌘V. It splits the content of the clipboard according to a delimiter (defaults to a blank line), and gives the first entry to the character-by-character paster. The remainder is copied to the clipboard.
+
+For instance, if the following is on the clipboard:
+
+```
+This is the first line.
+
+This is the second.
+
+// This line is skipped.
+
+This is the fourth line.
+```
+
+Then pressing ⌃⌘V will paste "This is the first line.". Pressing it again will paste "This is the second.", and pressing it a third time will paste "This is the fourth line.".
+
+Note that the workflow does not actually paste, but simulates keypresses. Hence non-ASCII characters do not work.
+
+The character-by-character paster will be aborted when pressing a modifier key. This comes in handy when you accidentally pasted a large amount of text.
+
+The default delimiter is "", and the default skip prefix is "//". Both can be changed by adjusting their variables ("delimiter" and "skip_prefix", respectively).</string>
+	<key>uidata</key>
+	<dict>
+		<key>236EE31A-31CA-4A58-A1E3-C2F9ACA5D38B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>305</integer>
+			<key>ypos</key>
+			<integer>350</integer>
+		</dict>
+		<key>52BEFBFC-AD31-4889-B3F5-53C85B5A9B8A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+		<key>75E13EEA-EE4C-4950-88D8-9E914319AC07</key>
+		<dict>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>350</integer>
+		</dict>
+		<key>AEE70035-1370-404D-B23B-0239EC1C3430</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>90</integer>
+		</dict>
+		<key>F36A4E88-5C02-4306-9516-70B45B480E3D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>30</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>delay_average</key>
+		<string>0,07</string>
+		<key>delay_variation</key>
+		<string>0,04</string>
+		<key>delimiter</key>
+		<string></string>
+		<key>skip_prefix</key>
+		<string>//</string>
+	</dict>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
