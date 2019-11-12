@@ -3,6 +3,12 @@
 This [Alfred](https://www.alfredapp.com) workflow is a paste queue and a 
 character-by-character paster in one.
 
+## Installation
+
+Go to http://www.packal.org/workflow/pasterrr and download the 
+`pasterrr.alfredworkflow` file ([direct link](https://github.com/packal/repository/raw/master/nl.nutma.pasterrr/pasterrr.alfredworkflow)).
+Open this file to import it into Alfred.
+
 ## Usage
 
 The character-by-character paste takes whatever is on the clipboard and pastes
