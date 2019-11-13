@@ -1,11 +1,13 @@
 # pasterrr
 
-This [Alfred](https://www.alfredapp.com) workflow is a paste queue and a 
+![demo](demo.gif "pasterrr demo")
+
+This [Alfred](https://www.alfredapp.com) workflow is a paste queue and a
 character-by-character paster in one.
 
 ## Installation
 
-Go to http://www.packal.org/workflow/pasterrr and download the 
+Go to http://www.packal.org/workflow/pasterrr and download the
 `pasterrr.alfredworkflow` file ([direct link](https://github.com/packal/repository/raw/master/nl.nutma.pasterrr/pasterrr.alfredworkflow)).
 Open this file to import it into Alfred.
 
@@ -20,6 +22,7 @@ according to a delimiter (defaults to a blank line), and gives the first entry
 to the character-by-character paster. The remainder is copied to the clipboard.
 
 For instance, if the following is on the clipboard:
+
 ```
 This is the first line.
 
@@ -29,16 +32,17 @@ This is the second.
 
 This is the fourth line.
 ```
+
 Then pressing ⌃⌘V will paste "This is the first line.". Pressing it again will
- paste "This is the second.", and pressing it a third time will paste 
+ paste "This is the second.", and pressing it a third time will paste
  "This is the fourth line.".
 
-Note that the workflow does not actually paste, but simulates keypresses. 
+Note that the workflow does not actually paste, but simulates keypresses.
 Hence non-ASCII characters do not work.
 
 The character-by-character paster will be aborted when pressing a modifier key.
 This comes in handy when you accidentally pasted a large amount of text.
 
-The default delimiter is "", and the default skip prefix is "//". Both can be 
-changed by adjusting their variables ("delimiter" and "skip_prefix", 
+The default delimiter is "", and the default skip prefix is "//". Both can be
+changed by adjusting their variables ("delimiter" and "skip_prefix",
 respectively).
